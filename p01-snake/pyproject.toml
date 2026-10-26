@@ -1,0 +1,33 @@
+[project]
+name = "snake"
+version = "0.1.0"
+readme = "README.md"
+authors = [
+    { name = "abilmansur", email = "aliaidarmm0@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = [
+    "E", "W", "F", "I", "B", "UP", "SIM", "NPY"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
