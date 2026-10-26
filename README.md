@@ -1,1 +1,1 @@
-# Reinforcement learning KBTU(2026 autumn), Aliaidar Abilmansur.
+# Reinforcement learning KBTU(2026 autumn), Aliaidar Abilmansur
