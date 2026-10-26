@@ -1,1 +1,1 @@
-# reinforcement-learning-cs234
+# Reinforcement learning KBTU(2026 autumn), Aliaidar Abilmansur.
