@@ -1,0 +1,39 @@
+[project]
+name = "snake-td"
+version = "0.1.0"
+description = "Tabular TD control for Snake: Q-learning, Sarsa and Double Q-learning"
+readme = "README.md"
+authors = [
+    { name = "abilmansur", email = "aliaidarmm0@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pillow>=13.0.0",
+    "pygame-ce>=2.5.8",
+]
+
+[project.scripts]
+snake-train = "snake_td.train:main"
+snake-compare = "snake_td.compare:main"
+snake-play = "snake_td.play:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "NPY"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
